@@ -197,4 +197,8 @@ TARGET_RECOVERY_DEVICE_MODULES += debuggerd
 TW_RECOVERY_ADDITIONAL_RELINK_FILES += $(TARGET_OUT_EXECUTABLES)/debuggerd
 BOARD_RAMDISK_USE_LZMA := true
 
+# Support 64 bit apps
 TARGET_SUPPORTS_64_BIT_APPS := true
+
+# Ignore 'depends on undefined module' error
+ALLOW_MISSING_DEPENDENCIES := true
